@@ -1,0 +1,20 @@
+/* components/Navbar.css */
+.navbar {
+  background-color: #d88da7; /* rosa customizado */
+}
+
+.nav-link {
+  color: white !important; /* força cor branca nos links */
+}
+
+.nav-link:hover {
+  color: #ffe0e0 !important;
+}
+
+.logo {
+    width: 140px;
+}
+
+.icone-entrar {
+    width: 30px;
+}

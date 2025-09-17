@@ -1,0 +1,4 @@
+button.botao {
+  background-color: #cc527c;
+  border: none; /* opcional, para remover borda padrão do Bootstrap */
+}

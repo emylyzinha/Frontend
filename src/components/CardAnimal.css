@@ -1,0 +1,78 @@
+.pet-card {
+  width: 300px !important;
+  border: 2px solid #f7d9e8;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fbe5ee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.pet-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto
+}
+
+.icone-local {
+    width: 8px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.pet-info {
+  padding: 10px;
+}
+
+.pet-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.pet-info .local {
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-size: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.btn.adotar {
+  background-color: #cc527c;
+  color: white;
+}
+
+.btn.detalhes {
+  background-color: white;
+  color: #cc527c;
+  border: 1px solid #cc527c;
+}
