@@ -8,11 +8,18 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-pink">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src={'/img/logo.png'} className='logo'/>
+          <img src={'/img/logo.png'} className="logo" alt="Logo do site" />
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -26,7 +33,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/entrar">
-                <img src={'/img/icone_entrar.png'} className='icone-entrar'/>
+                <img src={'/img/icone_entrar.png'} className="icone-entrar" alt="Ícone de login" />
               </Link>
             </li>
             <li className="nav-item">

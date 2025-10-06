@@ -1,0 +1,38 @@
+div.card-pix {
+    height: 380px;
+    width: 280px;
+    background-color: #D88DA7;
+    border-radius: 15px;
+}
+
+.box-qr-code {
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+button.btn-pix {
+  background-color: #FFD9E3; /* cor de fundo rosa claro */
+  color: #000; /* cor do texto */
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.bold-text {
+  font-weight: bold; /* deixa em negrito */
+  margin-bottom: 4px; /* diminui a distância para o próximo parágrafo */
+}
+
+.mb-0 {
+  margin-top: 0; /* remove espaçamento extra em cima */
+}
+
+
+img.img-pix {
+    height: 170px;
+    width: 170px;
+    justify-content: center;
+}

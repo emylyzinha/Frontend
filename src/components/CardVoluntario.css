@@ -1,0 +1,17 @@
+.card-voluntario {
+    height: 430px;
+    width: 320px;
+    background-color: #D88DA7;
+    border-radius: 10px;
+}
+
+.btn.contato-voluntario {
+  background-color: #cc527c;
+  color: white;
+}
+
+img.img-pet {
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+}
