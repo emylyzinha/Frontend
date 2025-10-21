@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './CardAnimal.css';
 
-export default function CardAnimal({ nome, local, idade, porte, genero, imagem }) {
+export default function CardAnimal({ id, nome, local, idade, porte, genero, imagem }) {
+  const navigate = useNavigate();
+
+  const handleVerDetalhes = () => {
+    navigate(`/animal/${id}`);
+  };
+  
   return (
     <div className="pet-card">
       <div className="pet-image">
@@ -19,7 +26,7 @@ export default function CardAnimal({ nome, local, idade, porte, genero, imagem }
           <span className="tag">{genero}</span>
         </div>
         <button className="btn adotar">QUERO ADOTAR</button>
-        <button className="btn detalhes">VER DETALHES</button>
+        <button className="btn detalhes" onClick={handleVerDetalhes}>VER DETALHES</button>
       </div>
     </div>
   );

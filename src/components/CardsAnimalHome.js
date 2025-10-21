@@ -1,5 +1,6 @@
 import CardAnimal from './CardAnimal';
 import './CardsAnimalHome.css';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 export default function CardsAnimalHome() {
@@ -9,6 +10,7 @@ export default function CardsAnimalHome() {
         <h2 className='text-dark text-center'>Adote Seu Melhor Amigo</h2>
         <div className='row p-3'>
             <CardAnimal
+                id = '1'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"
@@ -17,6 +19,7 @@ export default function CardsAnimalHome() {
                 imagem="/img/pet.png"
             />
             <CardAnimal
+                id = '1'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"
@@ -25,6 +28,7 @@ export default function CardsAnimalHome() {
                 imagem="/img/pet.png"
             />
             <CardAnimal
+                id = '1'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"
@@ -33,6 +37,7 @@ export default function CardsAnimalHome() {
                 imagem="/img/pet.png"
             />
             <CardAnimal
+                id = '1'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"
@@ -42,7 +47,7 @@ export default function CardsAnimalHome() {
             />
         </div>
 
-        <button className='btn btn-lg botao text-light col-4 offset-4'>Ver mais</button>
+        <Link to="/adocao" className='btn btn-lg botao text-light col-4 offset-4'>Ver mais</Link>
     </div>
     
   );
