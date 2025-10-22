@@ -28,6 +28,9 @@ export default function DetalhesAnimal() {
       <div className='bg-light'>
         
       </div>
+      <div className='bg-light'>
+        <CardsAnimalHome/>
+      </div>
     </>
   );
 }
