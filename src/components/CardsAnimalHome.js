@@ -19,7 +19,7 @@ export default function CardsAnimalHome() {
                 imagem="/img/pet.png"
             />
             <CardAnimal
-                id = '1'
+                id = '2'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"
@@ -28,7 +28,7 @@ export default function CardsAnimalHome() {
                 imagem="/img/pet.png"
             />
             <CardAnimal
-                id = '1'
+                id = '3'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"
@@ -37,7 +37,7 @@ export default function CardsAnimalHome() {
                 imagem="/img/pet.png"
             />
             <CardAnimal
-                id = '1'
+                id = '4'
                 nome="Dama"
                 local="Itapema, SC"
                 idade="Adulto"

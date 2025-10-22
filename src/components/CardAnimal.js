@@ -6,7 +6,7 @@ export default function CardAnimal({ id, nome, local, idade, porte, genero, imag
   const navigate = useNavigate();
 
   const handleVerDetalhes = () => {
-    navigate(`/animal/${id}`);
+    navigate(`/animal/${id}`, { state: { pet: { id, nome, local, idade, porte, genero, imagem } } });
   };
   
   return (

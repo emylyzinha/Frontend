@@ -1,52 +1,33 @@
-
-import { useParams } from 'react-router-dom';
+import React from 'react';
 import './DetalheAnimal.css';
 
-export default function DetalheAnimal() {
-  const { id } = useParams();
-  const animais = [
-    {
-      id: 1,
-      nome: 'Dama',
-      local: 'Itapema, SC',
-      idade: 'Adulto',
-      porte: 'Grande',
-      genero: 'Fêmea',
-      imagem: '/img/pet.png',
-      descricaoCurta:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus rhoncus pulvinar.',
-      descricaoLonga:
-        'Cras fringilla auctor ante, quis egestas erat fermentum nec. Suspendisse ornare, velit vitae varius porttitor, sem risus ultrices ligula, dictum laoreet ipsum odio ac nisl.',
-    },
-  ];
-
-  const animal = animais.find((a) => a.id === parseInt(id));
-
-  if (animal) return <p>Animal não encontrado.</p>;
+export default function DetalheAnimal({ pet, onAdotar }) {
+  if (!pet) return null;
 
   return (
     <div className="detalhes-animal-container">
       <div className="detalhes-animal-card">
         <div className="imagem-animal">
-          <img src={animal.imagem} alt={`Foto de ${animal.nome}`} />
+          <img src={pet.imagem} alt={`Foto de ${pet.nome}`} />
         </div>
         <div className="info-animal">
-          <h2>{animal.nome}</h2>
+          <h2>{pet.nome}</h2>
           <p className="local">
             <img src="/img/icone_local.png" alt="Ícone de localização" className="icone-local" />
-            {animal.local}
+            {pet.local}
           </p>
 
           <div className="tags">
-            <span className="tag">{animal.idade}</span>
-            <span className="tag">{animal.porte}</span>
-            <span className="tag">{animal.genero}</span>
+            <span className="tag">{pet.idade}</span>
+            <span className="tag">{pet.porte}</span>
+            <span className="tag">{pet.genero}</span>
           </div>
 
-          <p className="descricao">{animal.descricaoCurta}</p>
-          <p className="descricao">{animal.descricaoLonga}</p>
+          <p className="descricao">{pet.descricaoCurta}</p>
+          <p className="descricao">Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is row. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
 
-          <button className="btn-adotar">QUERO ADOTAR</button>
+          {/* Se quiser incluir botão de adotar */}
+          <button className="btn-adotar" onClick={onAdotar}>QUERO ADOTAR</button> 
         </div>
       </div>
     </div>

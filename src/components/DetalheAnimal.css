@@ -1,15 +1,19 @@
 .detalhes-animal-container {
   background-color: #ffe6ef;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  margin: 0;
+  height: 100%;
+}
+
+div#root {
+  background-color: #ffe6ef;
 }
 
 .detalhes-animal-card {
   display: flex;
-  background: white;
+  background-color: #ffff;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -20,8 +24,8 @@
 }
 
 .imagem-animal img {
-  width: 350px;
-  height: auto;
+  width: 500px;
+  height: 350px;
   border-radius: 15px;
   object-fit: cover;
 }
